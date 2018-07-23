@@ -13,11 +13,11 @@ here.
 
 I would recommend creating a directory(folder) or a [git repo][gitrepo] for this project.
 If you are in linux and want to create a directory use the following command, just replace **"my_new_directory"** with what you want to call it.
-{% highlight ruby %}
-# example
 
-mkdir my_new_directory
-{% endhighlight %}
+	# example
+
+	mkdir my_new_directory
+
 
 The file layout for this project is as follows, Just create these files.
 
@@ -37,9 +37,9 @@ i will also add *set -e* this option makes the shell script error out whenever a
 It's generally a good idea to have it enabled most of the time. but this is optional.
 
 
-  #!/usr/bin/env bash
+  	#!/usr/bin/env bash
 
-  set -e
+  	set -e
 
 
 Just to give a bit more explaining on the **shebang** above which is the ***#!***, this tells the script where to find
@@ -57,13 +57,11 @@ example the following path must be true for it to me **UEFI**,
 To test this in our script we can use the operator ***-d*** to test if it exists and use an **IF** statmemt to allow to program to run
 or not. You can just copy the following piece of code and add it on to the **base.sh**,
 
-{% highlight ruby %}
-# this checks if the system is uefi
-if [ ! -d "/sys/firmware/efi/" ]; then
-	echo "This script only works in UEFI"
-	exit 1
-fi
-{% endhighlight %}
+	# this checks if the system is uefi
+	if [ ! -d "/sys/firmware/efi/" ]; then
+		echo "This script only works in UEFI"
+		exit 1
+	fi
 
 ## 2. Step Two.
 
@@ -72,15 +70,13 @@ fi
 Lets now continue editing the **base.sh** and create a few variables.
 in case you don't know hwo to crate a variable in bash it works like the following,
 
-{% highlight ruby %}
-# example
+	# example
 
-VARIABLE="items"
+	VARIABLE="items"
 
-# and to use the variable
+	# and to use the variable
 
-mkdir ${VARIABLE}
-{% endhighlight %}
+	mkdir ${VARIABLE}
 
 So the variables we will need to add to the **base.sh** are as follows,
 
