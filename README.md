@@ -1,4 +1,4 @@
-
+## This is an extract from my [blog][forde]
 
 Hello, this is my second blog post. In this blog i will be giving a tutorial on how to install ArchLinux.
 What im going to do is create a bash shell script with all the nessasary commands needed to install
@@ -487,7 +487,7 @@ Yay!! we have just finished creating the scripts needed to install ArchLinux,
 now just upload it to github 
 
 
-
+[forde]: http://www.forde.blog/
 [guide]: https://wiki.archlinux.org/index.php/installation_guide
 [gitrepo]: https://help.github.com/articles/create-a-repo/
 [atom]: https://atom.io/
